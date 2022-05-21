@@ -1,0 +1,41 @@
+{
+    "name": "vue-fuse-admin",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "vite --mode development",
+        "serve:dev": "vite --mode development",
+        "serve:prod": "vite --mode production",
+        "build": "vite build",
+        "build:dev": "vite build --mode development",
+        "build:prod": "vite build --mode production"
+    },
+    "dependencies": {
+        "@textbus/browser": "^2.0.0-alpha.75",
+        "@textbus/core": "^2.0.0-alpha.74",
+        "@textbus/editor": "^2.0.0-alpha.76",
+        "axios": "^0.25.0",
+        "element-ui": "^2.15.8",
+        "element-ui-verify": "^1.2.6",
+        "js-cookie": "^3.0.1",
+        "normalize.css": "^8.0.1",
+        "nprogress": "^0.2.0",
+        "path-to-regexp": "^6.2.0",
+        "umy-ui": "^1.1.6",
+        "vite": "^2.9.8",
+        "vue": "^2.6.14",
+        "vue-router": "^3.1.5",
+        "vue-router-tab": "^1.2.11",
+        "vuex": "^3.6.2"
+    },
+    "devDependencies": {
+        "@originjs/vite-plugin-require-context": "^1.0.9",
+        "@vitejs/plugin-legacy": "^1.6.4",
+        "dotenv": "^16.0.0",
+        "mockjs": "^1.1.0",
+        "path-browserify": "^1.0.1",
+        "sass": "1.32.13",
+        "vite-plugin-compression": "^0.4.0",
+        "vite-plugin-vue2": "^1.9.2",
+        "vue-template-compiler": "^2.6.14"
+    }
+}

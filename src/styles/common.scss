@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+
+/* 浮动相关的class  */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* flex相关的class */
+
+.flex {
+    display: flex;
+}
+
+.flex-a {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 背景相关 */
+
+.bg-fff {
+    background: #fff;
+}
+
+
+/* 字体加粗 */
+
+.fb {
+    font-weight: bold;
+}
+
+.blod {
+    font-weight: bold;
+}
+
+
+/* 字体大小 */
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.f26 {
+    font-size: 26px;
+}
+
+.f28 {
+    font-size: 28px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+
+.f32 {
+    font-size: 32px;
+}
+
+.f34 {
+    font-size: 34px;
+}
+
+.f36 {
+    font-size: 36px;
+}
+
+.f38 {
+    font-size: 38px;
+}
+
+.f40 {
+    font-size: 40px;
+}

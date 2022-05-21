@@ -1,0 +1,7 @@
+build/*.js
+src/assets
+public
+dist
+node_modules
+*.zip
+*.7z
