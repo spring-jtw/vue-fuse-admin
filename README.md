@@ -1,12 +1,11 @@
 
 <div align=center>
-<img src="./public/favicon.ico" width=100" height="100" />
+<img src="./src/assets/logo.png" width="100" height="100" />
 </div>
 <div align=center>
 <img src="https://img.shields.io/badge/vue-2.6.14-brightgreen"/>
 <img src="https://img.shields.io/badge/vite--2.9.8-red"/>
 <img src="https://img.shields.io/badge/element--ui-2.15.8-green"/>
-
 </div>
 
 # 项目文档
@@ -22,7 +21,7 @@
 ### 启动项目
 ```bash
 # 安装依赖
-cnpm install || npm install
+npm i
 # 启动web项目
 npm run dev
 ```

@@ -11,9 +11,8 @@ Vue.use(Router);
 //不需要权限验证的路由，所有的角色都可以访问
 export const constantRoutes = [{
     path: '/login',
-    name: 'Login',
     component: () =>
-        import ("@/views/Login/index.vue")
+        import ("@/views/login/index.vue")
 }]
 
 //后台请求返回的路由
@@ -24,7 +23,6 @@ export const featchRoutes = [{
     meta: { title: '首页', icon: 'home' },
     children: [{
             path: '/',
-            name: 'Home',
             component: '/home/index',
             meta: { title: 'home', icon: 'rt-icon-doc' },
         },

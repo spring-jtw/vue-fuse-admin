@@ -47,7 +47,13 @@
 								issues 32
 							</a>
 							)
+							<div class='mt10'>
+								Ps:并不是说多级路由就不可以使用，你可以在左侧导航使用tree结构渲染，在addRoutes的时候把tree路由处理成一级路由
+							</div>
 						</div>
+					</el-alert>
+					<el-alert class='mt10' title="提醒" type="error" effect="light" :closable='false'>
+						此插件有时候会与vue-router各版本之间产生兼容性bug,导致页面tab显示不出来，更新一下此插件版本可以解决
 					</el-alert>
 				</el-card>
 			</el-col>

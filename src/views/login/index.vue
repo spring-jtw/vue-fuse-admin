@@ -2,6 +2,7 @@
 	<div class="login-page">
 		<div class="page_left flex-center">
 			<div class="text-center">
+				<img src="@/assets/logo.png" class="bg-fff" width="100px" alt="">
 				<h1>vue-fuse-admin</h1>
 				<div class="mt5">vue2+vite+element-ui</div>
 				<div class="mt15">融合vue2丰富开源插件的管理后台</div>
@@ -22,7 +23,7 @@
 							:type="show_password ? 'text' : 'password'"
 							autocomplete="new-password"
 							maxlength="12"
-							placeholder="请输入密码"
+							placeholder="随便输入"
 							@keyup.enter.native="submit"
 						>
 							<i
