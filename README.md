@@ -1,6 +1,6 @@
 
 <div align=center>
-<img src="./src/assets/logo.png" width="100" height="100" />
+<img src="http://lovefeibao.com/img/575e44f02c6bb.png" width="100" height="100" />
 </div>
 <div align=center>
 <img src="https://img.shields.io/badge/vue-2.6.14-brightgreen"/>
