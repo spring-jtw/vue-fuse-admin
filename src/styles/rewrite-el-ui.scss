@@ -1,0 +1,117 @@
+/* 重写 Element UI CSS */
+
+@import './theme.scss';
+$--color-primary: $primary;
+$--color-success: $success;
+$--color-warning: $warning;
+$--color-danger: $danger;
+$--border-radius-base: 0 !important;
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+@import "~element-ui/packages/theme-chalk/src/index";
+// 自定义 滚动条样式
+@mixin scrollBar {
+    &::-webkit-scrollbar-track-piece {
+        background: #fff;
+    }
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+        border-radius: 20px;
+    }
+}
+
+.el-button:hover {
+    opacity: 0.8;
+}
+
+.el-link:hover {
+    opacity: 0.8;
+}
+
+
+/* 对话框 */
+
+.el-dialog__header {
+    padding-bottom: 0;
+    .el-dialog__title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #1d2129;
+        line-height: 22px;
+    }
+    .el-dialog__headerbtn {
+        right: 15px;
+        top: 15px;
+        .el-dialog__close {
+            font-size: 28px;
+            color: #1d2129;
+            transition: all 0.3s;
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+.el-dialog__body {
+    @include scrollBar;
+    overflow-y: auto;
+    max-height: 85vh;
+    line-height: 24px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.el-table__fixed::before,
+.el-table__fixed-right::before {
+    height: 0 !important;
+}
+
+.el-table th.el-table__cell>.cell {
+    line-height: 24px;
+}
+
+.el-table .el-table__cell {
+    position: relative;
+    min-width: 0;
+    text-align: left;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    vertical-align: middle;
+    /* 避免固定列底部边线错位问题 */
+    line-height: 1;
+    .cell {
+        /* 单元格内容行高改为默认的22px，原因是：1. 行高统一；2. 避免操作列高度超出表格 */
+        line-height: 22px;
+    }
+}
+
+
+/* 修复el-date-picker CSS样式 */
+
+.el-range-separator {
+    box-sizing: content-box;
+}
+
+
+/* 绿色对勾 */
+
+.el-icon-check {
+    color: $success;
+}
+
+
+/* input */
+
+.el-input__inner {
+    text-overflow: ellipsis;
+}
+
+.el-tabs .el-tabs__nav .el-tabs__item {
+    /* 修复 element 使用tab键使按钮处于focus状态，添加的边框阴影 */
+    &.is-focus {
+        box-shadow: none !important;
+    }
+}

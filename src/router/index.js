@@ -24,40 +24,57 @@ export const featchRoutes = [{
     children: [{
             path: '/',
             component: '/home/index',
-            meta: { title: 'home', icon: 'rt-icon-doc' },
+            meta: { title: 'home', icon: 'el-icon-s-home' },
         },
         {
             path: '/tab-page',
-            meta: { title: 'vue-router-tab' },
             component: '/tab-page/index',
+            meta: { title: 'vue-router-tab', icon: 'el-icon-takeaway-box' }
         },
         {
             path: '/tab-details',
-            meta: { title: '编辑商品', key: 'fullpath', activeMenu: '/tab-page' },
             hidden: true,
             component: '/tab-page/details',
+            meta: { title: '编辑商品', key: 'fullpath', active_menu: '/tab-page' }
         },
         {
             path: '/element-ui-verify',
-            meta: { title: 'element-ui-校验' },
             component: '/element-ui-verify/index',
+            meta: { title: 'element-ui-校验', icon: 'el-icon-finished' }
         },
         {
             path: '/umy-ui',
-            meta: { title: '虚拟表格umy-ui' },
-            component: '/umy-ui-table/index',
+            component: '/umy-ui/index',
+            meta: { title: '虚拟表格umy-ui', icon: 'el-icon-s-grid' }
         },
         {
             path: '/textbus',
-            meta: { title: '富文本TextBus' },
             component: '/textbus/index',
+            meta: { title: '富文本TextBus', icon: 'el-icon-edit-outline' }
         },
         {
             path: '/form-generator',
-            meta: { title: '低代码' },
             component: '/form-generator/index',
+            meta: { title: '低代码', icon: 'el-icon-magic-stick' }
         }
     ]
+}, {
+    path: '/',
+    component: 'Layout',
+    meta: { title: '权限管理', icon: 'el-icon-setting' },
+    children: [{
+        path: '/router-manage',
+        component: '/router/index',
+        meta: { title: '路由管理', icon: 'el-icon-guide' },
+    }, {
+        path: '/user-manage',
+        component: '/user/index',
+        meta: { title: '用户管理', icon: 'el-icon-user-solid' },
+    }, {
+        path: '/role-manage',
+        component: '/role/index',
+        meta: { title: '角色管理', icon: 'el-icon-s-custom' },
+    }]
 }, {
     path: '*',
     redirect: "/"

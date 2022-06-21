@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+import app from '../src/app'
+import config from '../src/config/index'
+const port = config.PORT || 3001;
+app.listen(port, () => console.log(`Server started on port ${port}`));

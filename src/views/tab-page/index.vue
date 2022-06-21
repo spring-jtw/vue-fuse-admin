@@ -1,3 +1,7 @@
+<!--
+    @title:vue-router-tab
+    @path:/tab-page
+-->
 <template>
 	<div class="mt20">
 		<el-row :gutter="10">

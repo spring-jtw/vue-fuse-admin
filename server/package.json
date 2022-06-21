@@ -1,0 +1,53 @@
+{
+    "name": "mykoa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cross-env DEBUG=app:* NODE_ENV=development ./node_modules/.bin/nodemon scripts/index.js",
+        "start": "cross-env DEBUG=app:* NODE_ENV=development ./node_modules/.bin/nodemon scripts/index.js",
+        "test": "cross-env DEBUG=app:* NODE_ENV=test ./node_modules/.bin/nodemon scripts/index.js",
+        "prod": "cross-env DEBUG=app:* NODE_ENV=prod ./node_modules/.bin/nodemon scripts/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "ali-oss": "^6.16.0",
+        "bunyan": "^1.8.15",
+        "busboy": "^0.3.1",
+        "images": "^3.2.3",
+        "import-directory": "^1.0.6",
+        "jsonwebtoken": "^8.5.1",
+        "jwt-simple": "^0.5.6",
+        "koa": "^2.13.1",
+        "koa-body": "^4.2.0",
+        "koa-bodyparser": "^4.3.0",
+        "koa-compress": "^5.0.1",
+        "koa-generic-session": "^2.1.1",
+        "koa-helmet": "^6.0.0",
+        "koa-json": "^2.0.2",
+        "koa-jwt": "^4.0.0",
+        "koa-mount": "^4.0.0",
+        "koa-onerror": "^4.1.0",
+        "koa-router": "^10.0.0",
+        "koa2-request": "^1.0.4",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.3.3",
+        "require-directory": "^2.1.1",
+        "sequelize": "^6.6.2",
+        "sequelize-auto": "^0.8.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.6.0f",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "cross-env": "^7.0.3",
+        "debug": "^4.3.1",
+        "eslint": "^7.32.0",
+        "nodemon": "^2.0.7"
+    }
+}

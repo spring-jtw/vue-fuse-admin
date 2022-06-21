@@ -1,7 +1,7 @@
 <template>
 	<el-scrollbar wrap-class="scrollbar-wrapper">
 		<el-menu
-			:default-active="activeMenu"
+			:default-active="active_menu"
 			:collapse="isCollapse"
 			:text-color="variables.menuText"
 			:background-color="variables.menuBg"
@@ -10,8 +10,8 @@
 			mode="vertical"
 		>
 			<SidebarItem
-				v-for="route in routes"
-				:key="route.path"
+				v-for="(route,i) in routes"
+				:key="i"
 				:item="route"
 				:base-path="route.path"
 			/>
@@ -29,11 +29,11 @@
 		},
 		computed: {
 			...mapGetters(['sidebar','routes']),
-			activeMenu() {
+			active_menu() {
 				const route = this.$route
 				const { meta, path } = route
-				if (meta.activeMenu) {
-					return meta.activeMenu
+				if (meta.active_menu) {
+					return meta.active_menu
 				}
 				return path
 			},

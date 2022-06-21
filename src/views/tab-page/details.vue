@@ -1,3 +1,7 @@
+<!-- 
+	@title:vue-router-tab-详情
+    @path:/tab-details
+-->
 <template>
 	<div class="p20">
 		<el-alert type="success">

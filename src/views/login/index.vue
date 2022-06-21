@@ -1,8 +1,11 @@
+<!-- 
+	@title:登录; 
+	@path:/login 
+-->
 <template>
 	<div class="login-page">
 		<div class="page_left flex-center">
 			<div class="text-center">
-				<img src="@/assets/logo.png" class="bg-fff" width="100px" alt="">
 				<h1>vue-fuse-admin</h1>
 				<div class="mt5">vue2+vite+element-ui</div>
 				<div class="mt15">融合vue2丰富开源插件的管理后台</div>
@@ -11,7 +14,10 @@
 		</div>
 		<div class="page_right flex-center">
 			<div>
-				<el-form ref="form" :model="form" label-width="80px" size="medium">
+				<div class="text-center">
+					<img src="@/assets/logo.png" class="bg-fff" width="100px" alt="">
+				</div>
+				<el-form ref="form" :model="form" label-width="80px">
 					<el-form-item label="用户名:" verify prop="username" alias="用户名" empty-message="请填写用户名" class="form-item">
 						<el-input v-model="form.username" placeholder="随便输入">
 							<i slot="suffix" class="el-icon-user"></i>

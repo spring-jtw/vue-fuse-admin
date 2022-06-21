@@ -42,16 +42,16 @@ const axiosRequest = (url, method, data, config, headers) => {
         data,
         headers,
     }
-    config.errorMsg = config.errorMsg === undefined ? true : config.errorMsg //默认:弹出请求错误信息
-    config.successMsg = config.successMsg === undefined ? false : config.successMsg //默认:不弹出请求成功信息
+    config.err_msg = config.err_msg === undefined ? true : config.err_msg //默认:弹出请求错误信息
+    config.success_msg = config.success_msg === undefined ? false : config.success_msg //默认:不弹出请求成功信息
     return new Promise((resolve, reject) => {
         service(axiosConfig).then(res => {
             resolve(res)
-            if (config.successMsg && res.message) {
+            if (config.success_msg && res.message) {
                 Message.success(res.message)
             }
         }).catch(err => {
-            if (config.errorMsg && err.message) {
+            if (config.err_msg && err.message) {
                 Message.error(err.message)
             }
             if (err.status === -2) {

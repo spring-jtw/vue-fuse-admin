@@ -1,3 +1,7 @@
+<!--
+    @title:富文本TextBus
+    @path:/textbus
+-->
 <template>
 	<div class="mt20">
 		<el-row :gutter="10">

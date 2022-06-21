@@ -1,3 +1,7 @@
+<!-- 
+    @title:首页; 
+    @path:/ 
+-->
 <template>
     <div class="p20">
         <el-card>

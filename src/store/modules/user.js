@@ -27,7 +27,7 @@ const mutations = {
 const actions = {
     // 登录
     async login({ commit }, userInfo) {
-        const { data } = await api.user.login(userInfo)
+        const { data } = await api.api.login(userInfo)
         if (data.token) {
             commit('SET_TOKEN', data.token)
             Message.success('登录成功！')
@@ -37,7 +37,7 @@ const actions = {
     },
     // 请求用户信息数据
     async getUserInfo({ commit }) {
-        const { data } = await api.user.getUserInfo()
+        const { data } = await api.api.getUserInfo()
         if (!data) {
             Message.error('验证失败，请重新登录!')
             Cookies.remove('token')

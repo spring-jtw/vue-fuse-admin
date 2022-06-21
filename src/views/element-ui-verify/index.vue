@@ -1,3 +1,7 @@
+<!-- 
+    @title:element-ui校验; 
+    @path:/element-ui-verify
+-->
 <template>
 	<div class="mt20">
 		<el-row :gutter="10">

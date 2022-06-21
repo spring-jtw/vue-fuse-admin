@@ -1,5 +1,4 @@
 import { constantRoutes, featchRoutes } from '@/router'
-import user from '@/api/modules/user'
 import Layout from '@/layouts'
 
 

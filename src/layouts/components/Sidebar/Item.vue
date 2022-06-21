@@ -1,28 +1,27 @@
 <template>
-	<div>
-		<i v-if="icon" class="sub-el-icon" :class="icon"></i>
-		<span v-if="title">{{ title }}</span>
-	</div>
+	<span>
+		<i :class="icon" class="sub-el-icon"></i>
+		<span>{{title}}</span>
+	</span>
 </template>
 <script>
-	export default {
-		props: {
-			icon: {
-				type: String,
-				default: '',
-			},
-			title: {
-				type: String,
-				default: '',
-			},
+export default {
+	props: {
+		icon: {
+			type: String,
+			default: '',
 		},
-	}
+		title: {
+			type: String,
+			default: '',
+		},
+	},
+}
 </script>
 
 <style scoped>
-	.sub-el-icon {
-		color: currentColor;
-		width: 1em;
-		height: 1em;
-	}
+.sub-el-icon {
+	width: 1em;
+	height: 1em;
+}
 </style>

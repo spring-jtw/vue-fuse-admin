@@ -1,3 +1,7 @@
+<!-- 
+    @title:代代码; 
+    @path:/form-generator
+-->
 <template>
 	<div class="mt20">
 		<el-row :gutter="10">
