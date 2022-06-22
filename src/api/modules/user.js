@@ -24,7 +24,7 @@ export default {
                     data: {
                         token: 123
                     },
-                    message: '请求成功'
+                    message: '请求成功!'
                 })
             }, 100);
         })
